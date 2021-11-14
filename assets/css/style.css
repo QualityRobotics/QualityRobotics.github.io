@@ -374,3 +374,21 @@ hr{
 	align-items: center;
 	width: 100%;
 }
+.btn__download{
+	display: inline-block;
+	vertical-align: top;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 60px;
+	transition: bacground .2s linear, color .2s linear;
+}
+.btn__download:hover{
+	background-color: #fff;
+	color: #333;
+}
