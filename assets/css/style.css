@@ -377,13 +377,11 @@ hr{
 .btn__download{
 	border: 2px solid #fff;
 	border-radius: 5px;
-	padding: 10px 15px;
 	font-size: 14px;
 	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
-	margin-top: 60px;
 	transition: bacground .2s linear, color .2s linear;
 }
 .btn__download:hover{
