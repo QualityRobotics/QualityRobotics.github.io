@@ -21,7 +21,7 @@
   <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="index.html">
-  <img src="/assets/img/QuRologo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  <img src="assets/img/QuRologo.png" width="30" height="30" class="d-inline-block align-top" alt="">
   QuRo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
         <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">О нас</a>
+        <a class="nav-link" href="#about">О нас</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -62,10 +62,6 @@
 
 
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Контакты" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
-    </form>
   </div>
   </nav>
 
@@ -82,15 +78,60 @@
     </div>
 
 
+<a name="about"></a>
+<main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Немного о нас</h1>
+          <p class="lead text-muted">Наша компания начала своё существование в июне 2021 года. Мы разрабатываем коллаборативных роботов, или "коботов", а также программное обеспечение для их работы. Основное наше направление - научные разработки и исследования, а не монетизация, по этому компания абсолютно независима и ведёт дружелюбную политику, благодаря чему вы можете повлиять на наше развитие.</p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <h3 class="mb-5">Для коботов предполагаются такие сценарии развития, как:</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="assets/img/about1.png" data-holder-rendered="true">
+                <div class="card-body">
+                  <h5 class="card-text">Обучение детей алгоритмам и программированию</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="assets/img/about2.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <div class="card-body">
+                  <h5 class="card-text">Изучение инженерного программирования в ВУЗах</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="assets/img/about4.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <div class="card-body">
+                  <h5 class="card-text">Производственно-логистические решения</h5>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </main>
 
 
 
 
 
 
-
-
-    <script>function writeTextByJS(id, text, speed){
+    <script>
+      function writeTextByJS(id, text, speed){
 
     var ele = document.getElementById(id),
       txt = text.join("").split("");
