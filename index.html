@@ -13,13 +13,11 @@
      <style>
 
         html, body {
-            height: 100vh;
             background-color: #040404;
-            background-image: url('assets/img/layer_2 (2).png');
         }
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #23202a;
   position: relative;
 }
 .container {
@@ -105,33 +103,33 @@ body {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link text-light" href="index.html">Главная<span class="sr-only">(current)</span></a>
+        <a class="nav-link " href="index.html">Главная<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" href="#about">О нас</a>
+        <a class="nav-link " href="#about">О нас</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Коботы
         </a>
         <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item text-light" href="#">QR-1</a>
-          <a class="dropdown-item disabled text-light" href="#">QR-2</a>
+          <a class="dropdown-item " href="#">QR-1</a>
+          <a class="dropdown-item disabled " href="#">QR-2</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item text-light" href="#">Документация</a>
-          <a class="dropdown-item text-light" href="#"></a>
+          <a class="dropdown-item " href="#">Документация</a>
+          <a class="dropdown-item " href="#"></a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ПО
         </a>
         <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item text-light" href="PO.html">Загрузить ПО</a>
-          <a class="dropdown-item disabled text-light" href="#">Документация к ПО</a>
+          <a class="dropdown-item " href="PO.html">Загрузить ПО</a>
+          <a class="dropdown-item disabled " href="#">Документация к ПО</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item text-light" href="#">Дополнительное ПО</a>
-          <a class="dropdown-item text-light" href="#"></a>
+          <a class="dropdown-item " href="#">Дополнительное ПО</a>
+          <a class="dropdown-item " href="#"></a>
         </div>
       </li>
 
@@ -140,7 +138,8 @@ body {
   </div>
   </nav>
 
-  <div class="container-fluid d-flex h-100 justify-content-center align-items-center p-0">
+  <div style="height: 70vh" >
+  <div class="container-fluid d-flex h-100 justify-content-center align-items-center">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
         <h1 class="display-4 font-weight-normal" style="color: #ff6400">Добро пожаловать в QuRo</h1>
         <!--<p class="lead font-weight-normal pt-4">Производственная и образовательная робототехника.</p>-->
@@ -152,7 +151,7 @@ body {
       </div>
     </div>
 
-
+</div>
 <a name="about"></a>
 <main role="main">
 
@@ -201,12 +200,16 @@ body {
     </main>
 
 
+
+
 #ff6400
 #0f0600
 #171717
 
 
     <script>
+      var num = Math.ceil(Math.random() * 7)
+      document.body.background = 'assets/img/layer' + num + '.png'
       document.addEventListener('DOMContentLoaded', () => {
 
   const followCursor = () => { // объявляем функцию followCursor
