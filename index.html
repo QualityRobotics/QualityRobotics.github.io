@@ -91,7 +91,44 @@ body {
     display: none;
   }
 }
+:root {
+  --flick-big-text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 8px #fff,
+      0 0 15px #ff6400,
+      0 0 30px #ff6400,
+      0 0 40px #ff6400,
+      0 0 70px #ff6400,
+      0 0 100px #ff6400;
+  --flick-small-text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 11px #ff6400,
+      0 0 20px #ff6400,
+      0 0 30px #ff6400,
+      0 0 55px #ff6400,
+      0 0 80px #ff6400;
+}
 
+
+
+#neon {
+  animation: flicker .5s infinite alternate;
+  color: #fff;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: var(--flick-big-text-shadow);
+    color: #fff;
+  }
+  20%, 24%, 55% {
+    text-shadow: var(--flick-small-text-shadow);
+    color: #B9B9B9;
+  }
+}
     </style>
   </head>
   <body>
@@ -109,30 +146,30 @@ body {
         <a class="nav-link" style="color: #A9A9A9;" href="index.html">Главная<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-secondary" href="index.html#about">О нас</a>
+        <a class="nav-link" style="color: #A9A9A9;"  href="index.html#about">О нас</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-secondary " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle "  style="color: #A9A9A9;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Коботы
         </a>
         <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item text-secondary " href="#">QR-1</a>
-          <a class="dropdown-item disabled text-secondary " href="#">QR-2</a>
+          <a class="dropdown-item " style="color: #A9A9A9;"  href="#">QR-1</a>
+          <a class="dropdown-item disabled  " style="color: #A9A9A9;"  href="#">QR-2</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item text-secondary " href="#">Документация</a>
-          <a class="dropdown-item text-secondary " href="#"></a>
+          <a class="dropdown-item "  style="color: #A9A9A9;" href="#">Документация</a>
+          <a class="dropdown-item " style="color: #A9A9A9;"  href="#"></a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-secondary " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle"  style="color: #A9A9A9;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ПО
         </a>
         <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item text-secondary " href="PO.html">Загрузить ПО</a>
-          <a class="dropdown-item disabled text-secondary " href="#">Документация к ПО</a>
+          <a class="dropdown-item" style="color: #A9A9A9;"  href="PO.html">Загрузить ПО</a>
+          <a class="dropdown-item disabled " style="color: #A9A9A9;"  href="#">Документация к ПО</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item text-secondary " href="#">Дополнительное ПО</a>
-          <a class="dropdown-item text-secondary " href="#"></a>
+          <a class="dropdown-item "  style="color: #A9A9A9;" href="#">Дополнительное ПО</a>
+          <a class="dropdown-item "  style="color: #A9A9A9;" href="#"></a>
         </div>
       </li>
 
@@ -141,10 +178,10 @@ body {
   </div>
   </nav>
 
-  <div style="height: 70vh" >
+  <div style="height: 80vh" >
   <div class="container-fluid d-flex h-100 justify-content-center align-items-center">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal" style="color: #ff6400">Добро пожаловать в QuRo</h1>
+        <h1 class="display-4 font-weight-normal" id="neon">Добро пожаловать в QuRo</h1>
         <!--<p class="lead font-weight-normal pt-4">Производственная и образовательная робототехника.</p>-->
         <p id="demo" class="lead font-weight-normal pt-4 text-secondary"></p>
         <div id="typed-strings">
