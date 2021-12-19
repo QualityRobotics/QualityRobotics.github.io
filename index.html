@@ -100,13 +100,34 @@ body {
       0 0 30px #ff6400,
       0 0 40px #ff6400,
       0 0 70px #ff6400,
-      0 0 80px #ff6400;}
+      0 0 100px #ff6400;
+  --flick-small-text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 11px #ff6400,
+      0 0 20px #ff6400,
+      0 0 30px #ff6400,
+      0 0 55px #ff6400,
+      0 0 80px #ff6400;
+}
 
 
 
 #neon {
+  animation: flicker .5s infinite alternate;
   color: #fff;
-  text-shadow: var(--flick-big-text-shadow);
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: var(--flick-big-text-shadow);
+    color: #fff;
+  }
+  20%, 24%, 55% {
+    text-shadow: var(--flick-small-text-shadow);
+    color: #B9B9B9;
+  }
 }
     </style>
   </head>
