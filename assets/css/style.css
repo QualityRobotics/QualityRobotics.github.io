@@ -75,6 +75,16 @@ hr{
 	right: 0;
 }
 
+.header__pls{
+	width: 100%;
+	padding-top: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #ccc;
+}
+
 .header__inner{
 	display: flex;
 	justify-content: space-between;
@@ -82,6 +92,11 @@ hr{
 }
 
 .header__logo{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+}
+.header__logo a{
 	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
@@ -160,7 +175,7 @@ hr{
 .section__header{
 	width: 100%;
 	max-width: 950px;
-	margin: 0 auto 60px;
+	margin: 60px auto 60px;
 	text-align: center;
 }
 .section__suptitle{
@@ -368,18 +383,12 @@ hr{
 .footer__social img:hover{
 	filter: invert(14%) sepia(7%) saturate(9%) hue-rotate(342deg) brightness(101%) contrast(85%);
 }
-.form{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
 .btn__download{
-	border: 2px solid #333;
+	border: 2px, solid #333;
 	border-radius: 5px;
 	font-size: 14px;
 	font-weight: 700;
-	color: #333;
+	color: #333f;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: bacground .2s linear, color .2s linear;
@@ -387,4 +396,21 @@ hr{
 .btn__download:hover{
 	background-color: #fff;
 	color: #333;
+}
+
+@media (max-width: 1230px){
+	.intro_subtitle{
+		font-size: 10px;
+	}
+	.intro__title{
+		font-size: 10px;
+	}
+}
+@media (max-width: 900px){
+	.intro_subtitle{
+		font-size: 5px;
+	}
+	.intro__title{
+		font-size: 5px;
+	}
 }
